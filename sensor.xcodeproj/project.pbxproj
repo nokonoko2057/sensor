@@ -14,6 +14,8 @@
 		610F39BD1C095664001D60E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610F39BB1C095664001D60E9 /* LaunchScreen.storyboard */; };
 		610F39C81C095665001D60E9 /* sensorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F39C71C095665001D60E9 /* sensorTests.swift */; };
 		610F39D31C095665001D60E9 /* sensorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F39D21C095665001D60E9 /* sensorUITests.swift */; };
+		610F39E11C095EAD001D60E9 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F39E01C095EAD001D60E9 /* PushViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		7CFFB66C9FF9BFEEC703BD86 /* Pods_sensor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2524670EAD7FB10BA1EF9DA5 /* Pods_sensor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2524670EAD7FB10BA1EF9DA5 /* Pods_sensor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sensor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		610F39AF1C095664001D60E9 /* sensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sensor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610F39B21C095664001D60E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		610F39B41C095664001D60E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		610F39CE1C095665001D60E9 /* sensorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sensorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610F39D21C095665001D60E9 /* sensorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sensorUITests.swift; sourceTree = "<group>"; };
 		610F39D41C095665001D60E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		610F39E01C095EAD001D60E9 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		97CC9E9820EF03572E1E0CB3 /* Pods-sensor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sensor.release.xcconfig"; path = "Pods/Target Support Files/Pods-sensor/Pods-sensor.release.xcconfig"; sourceTree = "<group>"; };
+		B02266D138594C582F97D95B /* Pods-sensor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sensor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sensor/Pods-sensor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CFFB66C9FF9BFEEC703BD86 /* Pods_sensor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,8 @@
 				610F39C61C095665001D60E9 /* sensorTests */,
 				610F39D11C095665001D60E9 /* sensorUITests */,
 				610F39B01C095664001D60E9 /* Products */,
+				E2A776367710083AA385E68E /* Pods */,
+				DE9D257A88F16427587A778D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				610F39B21C095664001D60E9 /* AppDelegate.swift */,
+				610F39E01C095EAD001D60E9 /* PushViewController.swift */,
 				610F39B41C095664001D60E9 /* ViewController.swift */,
 				610F39B61C095664001D60E9 /* Main.storyboard */,
 				610F39B91C095664001D60E9 /* Assets.xcassets */,
@@ -125,6 +135,23 @@
 			path = sensorUITests;
 			sourceTree = "<group>";
 		};
+		DE9D257A88F16427587A778D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2524670EAD7FB10BA1EF9DA5 /* Pods_sensor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2A776367710083AA385E68E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B02266D138594C582F97D95B /* Pods-sensor.debug.xcconfig */,
+				97CC9E9820EF03572E1E0CB3 /* Pods-sensor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610F39D71C095665001D60E9 /* Build configuration list for PBXNativeTarget "sensor" */;
 			buildPhases = (
+				FBEACAC62B7735D42F585904 /* Check Pods Manifest.lock */,
 				610F39AB1C095664001D60E9 /* Sources */,
 				610F39AC1C095664001D60E9 /* Frameworks */,
 				610F39AD1C095664001D60E9 /* Resources */,
+				1DC049369DDAC054AA4AF507 /* Embed Pods Frameworks */,
+				9D41229F9EE8DBF663D7E23F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +222,7 @@
 				TargetAttributes = {
 					610F39AE1C095664001D60E9 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = L658J8KRQ5;
 					};
 					610F39C21C095664001D60E9 = {
 						CreatedOnToolsVersion = 7.0;
@@ -250,6 +281,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DC049369DDAC054AA4AF507 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sensor/Pods-sensor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D41229F9EE8DBF663D7E23F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sensor/Pods-sensor-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBEACAC62B7735D42F585904 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		610F39AB1C095664001D60E9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -257,6 +336,7 @@
 			files = (
 				610F39B51C095664001D60E9 /* ViewController.swift in Sources */,
 				610F39B31C095664001D60E9 /* AppDelegate.swift in Sources */,
+				610F39E11C095EAD001D60E9 /* PushViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,8 +474,10 @@
 		};
 		610F39D81C095665001D60E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B02266D138594C582F97D95B /* Pods-sensor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = sensor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nokonoko.sensor;
@@ -405,8 +487,10 @@
 		};
 		610F39D91C095665001D60E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CC9E9820EF03572E1E0CB3 /* Pods-sensor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = sensor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nokonoko.sensor;
@@ -481,6 +565,7 @@
 				610F39D91C095665001D60E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610F39DA1C095665001D60E9 /* Build configuration list for PBXNativeTarget "sensorTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +574,7 @@
 				610F39DC1C095665001D60E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610F39DD1C095665001D60E9 /* Build configuration list for PBXNativeTarget "sensorUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +583,7 @@
 				610F39DF1C095665001D60E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
